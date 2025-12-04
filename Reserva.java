@@ -11,8 +11,8 @@ public class Reserva {
         this.costoBase = costoBase;
     }
 
-    public void obtenerDetalles() {
-        System.out.println("el codigo es: " + codigo + " la pelicula es: " + nombrePelicula + " y el costo es: " + costoBase);
+    public String obtenerDetalles() {
+        return "Código: " + codigo + " pelicula: " + nombrePelicula + " costo: " + costoBase;
     }
 
     public String getCodigo() {

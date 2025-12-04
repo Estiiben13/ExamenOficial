@@ -12,11 +12,11 @@ public class SalaTradicional extends Reserva {
 
     @Override
 
-    public void obtenerDetalles() {
-        System.out.println("código: " + getCodigo() + " nombre de la pelicula: " + getNombrePelicula() + " costo: " + getCostoBase()
-                + " y la duracion de la pelicula es de: " + duracionMin);
+    public String obtenerDetalles() {
+        return "código: " + getCodigo() + " nombre de la pelicula: " + getNombrePelicula() + " costo: " + getCostoBase()
+                + " y la duracion de la pelicula es de: " + duracionMin + " minutos" +
+                "\n El costo total es: " + getCostoBase();
 
-        System.out.println("El costo total es de: " + getCostoBase());
     }
 
     public int getDuracionMin() {

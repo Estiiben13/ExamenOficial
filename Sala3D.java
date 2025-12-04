@@ -10,12 +10,12 @@ public class Sala3D extends Reserva {
     }
 
     @Override
-    public void obtenerDetalles() {
+    public String obtenerDetalles() {
         double total = getCostoBase() + valorLentes;
-        System.out.println("código: " + getCodigo() + " nombre de la pelicula: " + getNombrePelicula() + " costo: " + getCostoBase()
-                + " y el valor de los lentes es: " + valorLentes);
+        return "código: " + getCodigo() + " nombre de la pelicula: " + getNombrePelicula() + " costo: "
+                + getCostoBase() + " y el valor de los lentes es: " + valorLentes +
+                "\n El costo total es: " + total;
 
-        System.out.println("El costo total es: " + total);
     }
 
     public double getValorLentes() {
