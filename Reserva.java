@@ -12,7 +12,7 @@ public class Reserva {
     }
 
     public void obtenerDetalles() {
-        
+        System.out.println("el codigo es: " + codigo + " la pelicula es: " + nombrePelicula + " y el costo es: " + costoBase);
     }
 
     public String getCodigo() {
